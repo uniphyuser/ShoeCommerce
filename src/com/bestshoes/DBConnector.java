@@ -21,8 +21,8 @@ import java.sql.Statement;
  */
 
 public class DBConnector {
- 
-		private static final String url = "jdbc:mysql://ec2-3-82-191-139.compute-1.amazonaws.com:3306/demodb";
+		private static final String DBSERVER = System.getenv("SQL_INSTANCE");
+	    private static final String url = "jdbc:mysql://"+DBSERVER+":3306/demodb";
 	   // private static final String DriverClass = "com.mysql.jdbc.Driver";
 	    private static final String user = "uniphyuser";
 	    private static final String password = "Qwerty@12345";
