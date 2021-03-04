@@ -79,7 +79,7 @@ public class LoginController extends HttpServlet {
 			String sql = "";
 			
 	        if(userType.equals("user")) {
-	        	sql = "select * from Customers where customerId=? and userpwd=? ";
+	        	sql = "select * from customers where customerId=? and userpwd=? ";
 	        	
 	        }else if(userType.equals("csr")) {
 	        	sql = "select * from CSR where employeeId=? and userpwd=? ";

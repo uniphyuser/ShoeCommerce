@@ -97,9 +97,9 @@ public class RegisterController extends HttpServlet {
 		
 		// variables
 		 response.setContentType("text/html");
-		 String connectionUrl = "jdbc:mysql://localhost:3306/MVCDB";
-		 String connectionUser = "root";
-		 String connectionPassword = "mydb1234";
+		 String connectionUrl = "jdbc:mysql://ec2-3-82-191-139.compute-1.amazonaws.com:3306/demodb";
+		 String connectionUser = "uniphyuser";
+		 String connectionPassword = "Qwerty@12345";
 				 
 		// get params
         String category = request.getParameter("category");

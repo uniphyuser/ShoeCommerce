@@ -39,7 +39,7 @@ public class CustomersDAO {
 	public ArrayList<Customer> searchAllCustomer() throws Exception{
  
 		// make a query
-		String selectQuery = "select customerId, userName, userPwd, firstName, lastName, address, city, postalcode from Customers order by customerId asc";
+		String selectQuery = "select customerId, userName, userPwd, firstName, lastName, address, city, postalcode from customers order by customerId asc";
 	
 		//return value
 		ArrayList<Customer> custList = new ArrayList<Customer>();
