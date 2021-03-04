@@ -123,7 +123,7 @@ public class RegisterController extends HttpServlet {
 			  
 			if(category.equals("Customers"))
 			{ 
-				sql = "select * from Customers where customerId=?";
+				sql = "select * from customers where customerId=?";
 			}else {
 				sql = "select * from CSR where employeeId=? ";
 			}
